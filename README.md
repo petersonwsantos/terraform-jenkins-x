@@ -2,7 +2,8 @@
 Module Jenkins-x for Terraform
 
 
-::
+
+```shell
 
   terraform init  
   terraform plan
