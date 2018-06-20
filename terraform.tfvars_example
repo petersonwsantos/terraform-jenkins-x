@@ -1,0 +1,12 @@
+git_user = "my_git_user"
+
+git_token = "a848dc6f3dfdfsd5d4530ee4cca4b076bc"
+
+admin_user = "admin"
+
+admin_password = "snarlflower"
+
+# JXBasicAuth: admin:{SHA}PrHe382dcUWLu9cAAuiY3iVy5Ls=
+admin_password_jxbasicauth = "PrHe382dcUWLu9cAAuiY3iVy5Ls="
+
+kubernetes_context = "sk8.domain.com"
