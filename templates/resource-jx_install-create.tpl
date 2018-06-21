@@ -1,0 +1,1 @@
+printf "%s\n" | jx install --provider=${jx_provider} --batch-mode=true --default-admin-password=${admin_password} --no-default-environments=true --recreate-existing-draft-repos=true --verbose=true  --environment-git-owner=${git_owner} --git-username=${git_user}  --git-provider-url=${git_provider_url} --git-api-token=${git_token}

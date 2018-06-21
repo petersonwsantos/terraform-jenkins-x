@@ -1,0 +1,16 @@
+admin_user = "admin"
+
+admin_password = "1qdfdw3e4a"
+
+kubernetes_context = "gke_virti-proj-1_us-central1-a_cluster-1"
+
+jx_provider = "kubernetes"
+
+git_provider_url = "https://github.com"
+
+git_owner = "opstricks"
+
+git_user = "opstricks"
+
+# https://github.com/settings/tokens/new?scopes=repo,read:user,user:email,write:repo_hook
+git_token = "fcfa8bb880640e4e347ffed18ae7d88cb3de07db"
