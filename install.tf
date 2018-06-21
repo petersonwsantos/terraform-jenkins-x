@@ -32,17 +32,6 @@ resource "null_resource" "jx_install_create" {
 
 data "template_file" "jx_install_destroy" {
   template = "${file("${path.module}/templates/resource-jx_install-destroy.tpl")}"
-
-  vars {
-    admin_user        = "${var.admin_user}"
-    admin_password    = "${var.admin_password}"
-    jx_provider       = "kubernetes"
-    git_provider_url  = "https://github.com"
-    git_owner         = "opstricks"
-    git_user          = "opstricks"
-    git_token         = "${var.git_token}"
-  }
-
   depends_on = []
 }
 
