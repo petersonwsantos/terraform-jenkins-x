@@ -1,6 +1,4 @@
-# terraform-jenkins-x
-
-Module Jenkins-x for Terraform
+## Module Terraform for Jenkins-x
 
 ##### Initial phase of development
 
@@ -8,7 +6,7 @@ Module Jenkins-x for Terraform
 
 Only test
 
-## Step 1 - Create Cluster GCE
+### Step 1 - Create Cluster GCE
 
 ```shell
 
@@ -32,7 +30,7 @@ gcloud beta container --project "virti-proj-1" clusters create "cluster-2" \
 ```
 
 
-##Step 2 -  
+### Step 2 -  
 
 ```shell
 
@@ -43,7 +41,7 @@ gcloud beta container --project "virti-proj-1" clusters create "cluster-2" \
 
 ```
 
-## Step 3 - Prepare variables
+### Step 3 - Prepare variables
 
 ``` shell
 admin_user = "admin"
@@ -65,7 +63,7 @@ git_token = "fcfa8bb880640e4e347ffed18ae7d88cb3de07db"
 
 ```
 
-## Step 4 - Test module
+### Step 4 - Test module
 
 ```shell
 
