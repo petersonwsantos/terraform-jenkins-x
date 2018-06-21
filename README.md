@@ -61,6 +61,7 @@ admin_user = "admin"
 admin_password = "1q2w3e4a"
 
 # ( ** ) password JXBasicAuth
+# the generation of this password will be automated 
 admin_password_jxbasicauth = "jTy/Hipu$Azmac9UkQHHn3YXxC4Rpv/"
 admin_password_jxbasicauth_values = "admin:$apr1$jTy/Hipu$Azmac9UkQHHn3YXxC4Rpv/"
 
