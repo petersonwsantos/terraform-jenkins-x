@@ -1,12 +1,1 @@
-servers:
-- url: http://chartmuseum.jx.35.193.255.148.nip.io
-  users:
-  - username: admin
-    apitoken: 
-    bearertoken: 
-    password: 1q2w3e4a
-  name: chartmuseum.jx.35.193.255.148.nip.io
-  kind: 
-  currentuser: 
-defaultusername: 
-currentserver: http://chartmuseum.jx.35.193.255.148.nip.io
+
