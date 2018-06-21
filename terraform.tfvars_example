@@ -2,7 +2,7 @@
 # your git username  
 git_user = "my_git_user"
 
-# ( * ) personal access token
+# personal access token
 git_token = "a848dsfgsfggsdfc6f3dfdfsd5ddfd4530ee4cca4b076bc"
 
 # username admin jenkins-x
@@ -11,7 +11,7 @@ admin_user = "admin"
 # password admin jenkins-x
 admin_password = "1q2w3e4a"
 
-# ( ** ) password JXBasicAuth
+# password JXBasicAuth
 # the generation of this password will be automated 
 admin_password_jxbasicauth = "jTy/Hipu$Azmac9UkQHHn3YXxC4Rpv/"
 admin_password_jxbasicauth_values = "admin:$apr1$jTy/Hipu$Azmac9UkQHHn3YXxC4Rpv/"
