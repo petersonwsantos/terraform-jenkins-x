@@ -32,7 +32,7 @@ gcloud beta container --project "virti-proj-1" clusters create "cluster-2" \
 ```
 
 
-##Step 2 -  
+## Step 2 - Get files
 
 ```shell
 
@@ -79,10 +79,11 @@ kubernetes_context = "gke_virti-proj-1_us-central1-a_cluster-2"
 
 $ htpasswd -nb admin 1q2w3e4a
 admin:$apr1$jTy/Hipu$Azmac9UkQHHn3YXxC4Rpv/
-```
-admin_password_jxbasicauth = "jTy/Hipu$Azmac9UkQHHn3YXxC4Rpv/"
 
-admin_password_jxbasicauth_values = "admin:$apr1$jTy/Hipu$Azmac9UkQHHn3YXxC4Rpv/"
+# admin_password_jxbasicauth = "jTy/Hipu$Azmac9UkQHHn3YXxC4Rpv/"
+# admin_password_jxbasicauth_values = "admin:$apr1$jTy/Hipu$Azmac9UkQHHn3YXxC4Rpv/"
+```
+
 
 ## Step 4 - Test module
 
