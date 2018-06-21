@@ -1,12 +1,20 @@
+
+# your git username  
 git_user = "my_git_user"
 
-git_token = "a848dc6f3dfdfsd5d4530ee4cca4b076bc"
+# ( * ) personal access token
+git_token = "a848dsfgsfggsdfc6f3dfdfsd5ddfd4530ee4cca4b076bc"
 
+# username admin jenkins-x
 admin_user = "admin"
 
-admin_password = "snarlflower"
+# password admin jenkins-x
+admin_password = "1q2w3e4a"
 
-# JXBasicAuth: admin:{SHA}PrHe382dcUWLu9cAAuiY3iVy5Ls=
-admin_password_jxbasicauth = "PrHe382dcUWLu9cAAuiY3iVy5Ls="
+# ( ** ) password JXBasicAuth
+# the generation of this password will be automated 
+admin_password_jxbasicauth = "jTy/Hipu$Azmac9UkQHHn3YXxC4Rpv/"
+admin_password_jxbasicauth_values = "admin:$apr1$jTy/Hipu$Azmac9UkQHHn3YXxC4Rpv/"
 
-kubernetes_context = "sk8.domain.com"
+# context
+kubernetes_context = "gke_virti-proj-1_us-central1-a_cluster-2"
