@@ -26,12 +26,11 @@ resource "null_resource" "jenkins-x_download_draft" {
   provisioner "local-exec" {
     when        = "destroy"
     command     = "rm -rf ~/.jx/draft"
-    interpreter = ["/bin/bash", "-c"]
   }
 }
 
 # jx install
-resource "helm_repository" "jenkins-x_repo" {
+resource "helm_repository" "jenkins-x" {
   name       = "jenkins-x"
   url        = "http://chartmuseum.build.cd.jenkins-x.io"
   depends_on = [
@@ -53,11 +52,12 @@ resource "helm_release" "jenkins-x" {
     "${file("${path.module}/conf/gitSecrets.yaml")}",
     "${file("${path.module}/conf/adminSecrets.yaml")}",
     "${file("${path.module}/conf/extraValues.yaml")}",
+    "${file("${path.module}/conf/values.yaml")}",
   ]
 
   depends_on = [
     "null_resource.helm_init",
-    "helm_repository.jenkins-x_repo",
+    "helm_repository.jenkins-x",
     "null_resource.jenkins-x_download_cloud-environments",
     "null_resource.jenkins-x_download_draft",
     "null_resource.extraValues_render",

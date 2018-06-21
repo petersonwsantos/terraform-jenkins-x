@@ -1,0 +1,10 @@
+JXBasicAuth: admin:/Hipu/
+chartmuseum:
+  env:
+    secret:
+      BASIC_AUTH_USER: admin
+      BASIC_AUTH_PASS: 1q2w3e4a
+jenkins:
+  Master:
+    AdminUser: admin
+    AdminPassword: 1q2w3e4a
