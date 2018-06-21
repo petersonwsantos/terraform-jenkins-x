@@ -56,29 +56,3 @@ resource "null_resource" "jx_install_destroy" {
   }
 
 }
-
-# data "template_file" "jx_environment_create" {
-#   template = "${file("${path.module}/templates/resource-jx_environment-create.tpl")}"
-#
-#   vars {
-#     git_provider_url  = "https://github.com"
-#     git_user          = "opstricks"
-#     git_token         = "${var.git_token}"
-#     git_token         = "${var.git_token}"
-#     environments     = "${var.environments}"
-#   }
-#   depends_on = []
-# }
-#
-# resource "null_resource" "jx_environment_create" {
-#
-#   provisioner "local-exec" {
-#     command = "echo ${data.template_file.jx_environment_create.rendered} > ${path.module}/scripts/2-create-environment.sh"
-#   }
-#
-#   provisioner "local-exec" {
-#     command = "echo ${data.template_file.jx_environment_create.rendered} > ${path.module}/scripts/2-create-environment.sh"
-#   }
-#
-#   depends_on = ["null_resource.jx_install_create"]
-# }
